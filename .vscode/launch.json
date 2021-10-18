@@ -7,6 +7,21 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "Cargo test",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "utc_epoch"
+                ]
+            },
+            "program": "${cargo:program}",
+            "args": []
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "Debug unit tests in library 'hifitime'",
             "cargo": {
                 "args": [

@@ -214,6 +214,7 @@ impl convert::From<ParseIntError> for Errors {
 }
 
 /// Enum of the different time systems available
+#[allow(clippy::upper_case_acronyms)]
 #[derive(Debug, PartialEq)]
 pub enum TimeSystem {
     /// Ephemeris Time as defined by SPICE (slightly different from true TDB)
